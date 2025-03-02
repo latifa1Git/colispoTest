@@ -5,4 +5,4 @@ Feature: suggest route
     Scenario: Suggest Route
         When I navigate to the suggest route page
         And I suggest a route
-        Then I redirect to the home page
+        Then I should see the success message

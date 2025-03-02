@@ -1,5 +1,5 @@
 const suggestRouteElements = {
-    suggestRouteButton:'a[href="/proposerTrajet"]',
+    suggestRouteButton:'div.d-flex.align-items-center',
     city1:'input[placeholder="Saisir la ville ou adresse"]',
     clickCity1:'.pac-item',
     city2:'input[placeholder="Saisir la ville ou adresse"]',
@@ -20,7 +20,7 @@ const suggestRouteElements = {
     radioButton3:'#r5',
     radioButton4:'#r8',
     submitButton:'button[type="submit"]',
-    dashboard:'button[class="bg-transparent "]'
+    alertSuccess:'#exampleModalLabel',
 
 
 

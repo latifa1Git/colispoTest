@@ -9,9 +9,9 @@ Given(`I visit the login page`, () => {
 });
 
 When(`I enter valid credentials`, () => {
-cy.get(loginElements.email).type('particulier@gmail.com')
-cy.get(loginElements.password).type('0000')
-cy.get(loginElements.submit).click()
+    cy.get(loginElements.email).type('particulier@gmail.com')
+    cy.get(loginElements.password).type('0000')
+    cy.get(loginElements.submit).click()
 });
 
 Then(`I should see the dashboard`, () => {
@@ -19,13 +19,13 @@ Then(`I should see the dashboard`, () => {
 });
 
 When(`I enter invalid credentials`, () => {
-   cy.get(loginElements.email).type('particulier@gmail.com')
-   cy.get(loginElements.password).type('000')
-   cy.get(loginElements.submit).click()
+    cy.get(loginElements.email).type('particulier@gmail.com')
+    cy.get(loginElements.password).type('000')
+    cy.get(loginElements.submit).click()
 });
 
 Then(`I should see an error message`, () => {
-    cy.get(loginElements.Alert).should('contain', 'Mot de passe incorrect.').should('be.visible')
-    
+    cy.get(loginElements.Alert).should('contain', 'Veuillez saisir un mot de passe valide').should('be.visible')
+
 });
 
