@@ -15,7 +15,7 @@ Given(`I Login the application`, () => {
 });
 
 When(`I navigate to the add pack page`, () => {
-    cy.xpath(addPackElements.addPackButton).click();
+    cy.get(addPackElements.addPackButton).eq(1).click();
 });
 
 When(`I add a pack`, () => {

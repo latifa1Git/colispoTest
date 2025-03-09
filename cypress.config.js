@@ -9,7 +9,7 @@ module.exports = defineConfig({
   reporterOptions: {
     reportDir: 'cypress/reports',
     overwrite: false,
-    html: false,
+    html: true,
     json: true,
     reportFilename: '[status]_[datetime]-report',
     timestamp: 'shortDate',

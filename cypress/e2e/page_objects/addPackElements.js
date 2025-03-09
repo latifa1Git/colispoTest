@@ -1,5 +1,5 @@
 const addPackElements = {
-    addPackButton: '//*[@id="responsive-navbar-nav"]/div[2]/a[2]/div/p',
+    addPackButton: '.nav-link',
     quantity: '.form-control ',
     name: '.form-control ',
     length: '.form-control ',
